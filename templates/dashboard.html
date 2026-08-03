@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secure Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-wrapper">
+
+
+<div class="dashboard">
+
+
+<div class="brand">
+
+<span>🔐</span>
+Secure Login System
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+<h1>
+Welcome, {{ username }} !
+</h1>
+
+
+<p class="short-info">
+
+Your account is secure and authenticated.
+
+</p>
+
+
+
+
+
+
+<div class="status">
+
+
+<span class="dot"></span>
+
+
+<span>
+Secure Session Active
+</span>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<a href="/logout" class="logout">
+
+Sign Out
+
+</a>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
